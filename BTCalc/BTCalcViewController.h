@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface BTCalcViewController : UIViewController
-
+- (void) updateDisplay:(NSString *)addToDisplay;
+- (void) evaluateExpression;
+- (void) evaluatePostfix:(NSMutableArray *) postFix;
+- (BOOL) operatorHasPrecedence:(NSString *) c1:(NSString *) c2;
+- (int) getPrecedence:(NSString *) c;
+@property(nonatomic, assign)BOOL operationActive;
+@property (weak, nonatomic) NSString *output;
 @end
