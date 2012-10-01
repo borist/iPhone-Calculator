@@ -26,3 +26,5 @@ Extra Credit:
  	  properly even when the operation string is very long. Think about how you would do that gracefully.
 
 	- (5 pts) Support backspace.
+ 
+ 	- (? pts) Added homescreen icon for calculator 
