@@ -71,7 +71,8 @@
 // If an operation was just added to the expression, a second operation will not
 // be added until a digit is added after the last operator.
 - (IBAction)pressedOperation:(UIButton *)sender {
-    if (!self.operationActive && [self.output length] != 0) {
+    if (!self.operationActive &&
+        ([self.output length] != 0 || [self.outputAnswerField.text length] != 0)) {
         self.operationActive = TRUE;
         [self updateDisplay:[sender currentTitle]];
     }
