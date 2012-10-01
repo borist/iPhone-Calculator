@@ -67,6 +67,9 @@
     }
 }
 
+// Called when an operator button is pressed (i.e. "+" or "-" or "÷" or "*"
+// If an operation was just added to the expression, a second operation will not
+// be added until a digit is added after the last operator.
 - (IBAction)pressedOperation:(UIButton *)sender {
     if (!self.operationActive && [self.output length] != 0) {
         self.operationActive = TRUE;
@@ -74,12 +77,14 @@
     }
 }
 
+// Clear all the UILabels
 - (IBAction)clear:(id)sender {
     self.output = @"";
     self.outputField.text = self.output;
     self.outputAnswerField.text = self.output;
 }
 
+// Delete the most recently added operand or operator
 - (IBAction)backspace:(id)sender {
     if([self.output length] != 0) {
         self.output = [self.output substringToIndex:[self.output length] - 1];
@@ -87,6 +92,7 @@
     }
 }
 
+// Add a decimal place, only when an operand was the last thing added to the expression
 - (IBAction)addDecimal:(id)sender {
     // need to check if decimal already exists
     if(!self.operationActive && [self.output rangeOfString:@"."].location == NSNotFound) {
@@ -95,12 +101,14 @@
     }
 }
 
+// Called when a digit is pressed, adds it to the expression
 - (IBAction)pressedNumber:(UIButton *)sender {
     NSString *number = [sender currentTitle];
     self.operationActive = FALSE;
     [self updateDisplay:number];
 }
 
+// Evalute the expression by first converting it to post-fix notation
 - (void)evaluateExpression {
     NSMutableArray *operatorSudoStack = [NSMutableArray array];
     NSMutableArray *stringElements = [NSMutableArray array];
@@ -139,6 +147,7 @@
     [self evaluatePostfix:stringElements];
 }
 
+// Evalute the postfix expression
 - (void) evaluatePostfix:(NSMutableArray *)postFix {
     NSMutableArray *result = [NSMutableArray array];
     for (int i = 0; i < [postFix count]; i++) {
@@ -176,10 +185,12 @@
     self.outputAnswerField.text = [result objectAtIndex:0];
 }
 
+// @return whether c1 has precedence (or is equal in precedence to) over c2
 - (BOOL)operatorHasPrecedence:(NSString *)c1 :(NSString *)c2 {
     return [self getPrecedence:c1] >= [self getPrecedence:c2];
 }
 
+// Get the precedence value of an input string.
 - (int)getPrecedence:(NSString *)c {
     int val = 0;
     if ([c isEqualToString:@"-"] || [c isEqualToString:@"+"]) {
