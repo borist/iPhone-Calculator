@@ -63,7 +63,7 @@
 // some sort of input, evaluate the expression (respecting order of operations).
 - (IBAction)evalEquals:(id)sender {
     if (!self.operationActive && [self.output length] != 0) {
-        [self evaluateExpression];   
+        [self evaluateExpression];
     }
 }
 
@@ -72,7 +72,7 @@
 // be added until a digit is added after the last operator.
 - (IBAction)pressedOperation:(UIButton *)sender {
     if (!self.operationActive &&
-        ([self.output length] != 0 || [self.outputAnswerField.text length] != 0)) {
+        [self.output length] != 0 && [self.outputAnswerField.text length] == 0) {
         self.operationActive = TRUE;
         [self updateDisplay:[sender currentTitle]];
     }

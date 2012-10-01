@@ -17,6 +17,7 @@
 		A147C30B16179B0600775B87 /* BTCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A147C30A16179B0600775B87 /* BTCalcViewController.m */; };
 		A17DCA0616196F9E00E9B9DC /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A17DCA0516196F9E00E9B9DC /* background.jpg */; };
 		A17DCA09161970AA00E9B9DC /* backspace.png in Resources */ = {isa = PBXBuildFile; fileRef = A17DCA08161970AA00E9B9DC /* backspace.png */; };
+		A17DCA0F1619823400E9B9DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A17DCA0C161981C100E9B9DC /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		A147C30A16179B0600775B87 /* BTCalcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCalcViewController.m; sourceTree = "<group>"; };
 		A17DCA0516196F9E00E9B9DC /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = "../../../../../../../../workspace/PennMeet/res/drawable-hdpi/background.jpg"; sourceTree = "<group>"; };
 		A17DCA08161970AA00E9B9DC /* backspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backspace.png; path = ../../../../../../../../../Desktop/backspace.png; sourceTree = "<group>"; };
+		A17DCA0C161981C100E9B9DC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A147C2E516179B0600775B87 = {
 			isa = PBXGroup;
 			children = (
+				A17DCA0C161981C100E9B9DC /* Default.png */,
 				A147C2FA16179B0600775B87 /* BTCalc */,
 				A147C2F316179B0600775B87 /* Frameworks */,
 				A147C2F116179B0600775B87 /* Products */,
@@ -160,6 +163,7 @@
 				A147C30816179B0600775B87 /* MainStoryboard.storyboard in Resources */,
 				A17DCA0616196F9E00E9B9DC /* background.jpg in Resources */,
 				A17DCA09161970AA00E9B9DC /* backspace.png in Resources */,
+				A17DCA0F1619823400E9B9DC /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
