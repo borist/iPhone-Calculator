@@ -4,6 +4,7 @@ iPhone-Calculator
 iPhone Calculator created as homework project for CIS195@UPenn
 
 Some features to note:
+
 	- expression respects order of operations
 		- this is done by converting the infix expression into postfix notation and then evalutating the postfix expression using a sudo stack (aka a NSMutableArray).
 
