@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1259941161A27DC00073DD0 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1259940161A27DC00073DD0 /* background.jpg */; };
 		A147C2F516179B0600775B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A147C2F416179B0600775B87 /* UIKit.framework */; };
 		A147C2F716179B0600775B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A147C2F616179B0600775B87 /* Foundation.framework */; };
 		A147C2F916179B0600775B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A147C2F816179B0600775B87 /* CoreGraphics.framework */; };
@@ -15,12 +16,12 @@
 		A147C30516179B0600775B87 /* BTCalcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A147C30416179B0600775B87 /* BTCalcAppDelegate.m */; };
 		A147C30816179B0600775B87 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A147C30616179B0600775B87 /* MainStoryboard.storyboard */; };
 		A147C30B16179B0600775B87 /* BTCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A147C30A16179B0600775B87 /* BTCalcViewController.m */; };
-		A17DCA0616196F9E00E9B9DC /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A17DCA0516196F9E00E9B9DC /* background.jpg */; };
 		A17DCA0F1619823400E9B9DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A17DCA0C161981C100E9B9DC /* Default.png */; };
 		A1C33C13161A0CBB00892907 /* backspace.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C33C12161A0CBB00892907 /* backspace.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1259940161A27DC00073DD0 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		A147C2F016179B0600775B87 /* BTCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A147C2F416179B0600775B87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A147C2F616179B0600775B87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,7 +35,6 @@
 		A147C30716179B0600775B87 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A147C30916179B0600775B87 /* BTCalcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTCalcViewController.h; sourceTree = "<group>"; };
 		A147C30A16179B0600775B87 /* BTCalcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCalcViewController.m; sourceTree = "<group>"; };
-		A17DCA0516196F9E00E9B9DC /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = "../../../../../../../../workspace/PennMeet/res/drawable-hdpi/background.jpg"; sourceTree = "<group>"; };
 		A17DCA0C161981C100E9B9DC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A1C33C12161A0CBB00892907 /* backspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backspace.png; path = BTCalc/backspace.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +56,7 @@
 		A147C2E516179B0600775B87 = {
 			isa = PBXGroup;
 			children = (
+				A1259940161A27DC00073DD0 /* background.jpg */,
 				A1C33C12161A0CBB00892907 /* backspace.png */,
 				A17DCA0C161981C100E9B9DC /* Default.png */,
 				A147C2FA16179B0600775B87 /* BTCalc */,
@@ -88,7 +89,6 @@
 				A147C30316179B0600775B87 /* BTCalcAppDelegate.h */,
 				A147C30416179B0600775B87 /* BTCalcAppDelegate.m */,
 				A147C30616179B0600775B87 /* MainStoryboard.storyboard */,
-				A17DCA0516196F9E00E9B9DC /* background.jpg */,
 				A147C30916179B0600775B87 /* BTCalcViewController.h */,
 				A147C30A16179B0600775B87 /* BTCalcViewController.m */,
 				A147C2FB16179B0600775B87 /* Supporting Files */,
@@ -161,9 +161,9 @@
 			files = (
 				A147C2FF16179B0600775B87 /* InfoPlist.strings in Resources */,
 				A147C30816179B0600775B87 /* MainStoryboard.storyboard in Resources */,
-				A17DCA0616196F9E00E9B9DC /* background.jpg in Resources */,
 				A17DCA0F1619823400E9B9DC /* Default.png in Resources */,
 				A1C33C13161A0CBB00892907 /* backspace.png in Resources */,
+				A1259941161A27DC00073DD0 /* background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
