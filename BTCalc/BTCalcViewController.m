@@ -87,6 +87,12 @@
 
 // Delete the most recently added operand or operator
 - (IBAction)backspace:(id)sender {
+    // If we just evaluated an expression, clear the textfields
+    if ([self.outputAnswerField.text length] != 0) {
+        self.output = @"";
+        self.outputField.text = @"";
+        self.outputAnswerField.text = @"";
+    }
     if([self.output length] != 0) {
         self.output = [self.output substringToIndex:[self.output length] - 1];
         self.outputField.text = self.output;
