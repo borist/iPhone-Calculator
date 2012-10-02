@@ -15,5 +15,6 @@
 - (BOOL) operatorHasPrecedence:(NSString *) c1:(NSString *) c2;
 - (int) getPrecedence:(NSString *) c;
 @property(nonatomic, assign)BOOL operationActive;
+@property(nonatomic, assign)BOOL canAddDecimal;
 @property (weak, nonatomic) NSString *output;
 @end

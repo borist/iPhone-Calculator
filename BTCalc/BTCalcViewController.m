@@ -50,8 +50,10 @@
         self.output = @"";
         self.outputField.text = @"";
         self.outputAnswerField.text = @"";
+        self.canAddDecimal = TRUE;
     }
     if ([self.output length] == 0) {
+        self.canAddDecimal = TRUE;
         self.output = addToDisplay;
     } else {
         self.output = [NSString stringWithFormat: @"%@%@", self.output, addToDisplay];
@@ -83,6 +85,7 @@
     self.output = @"";
     self.outputField.text = self.output;
     self.outputAnswerField.text = self.output;
+    self.canAddDecimal = TRUE;
 }
 
 // Delete the most recently added operand or operator
@@ -97,19 +100,24 @@
         self.output = [self.output substringToIndex:[self.output length] - 1];
         self.outputField.text = self.output;
     }
+    if ([self.output rangeOfString:@"."].location == NSNotFound) {
+        self.canAddDecimal = FALSE;
+    }
 }
 
 // Add a decimal place, only when an operand was the last thing added to the expression
 - (IBAction)addDecimal:(id)sender {
     // need to check if decimal already exists
-    if(!self.operationActive && [self.output rangeOfString:@"."].location == NSNotFound) {
+    if(!self.operationActive && self.canAddDecimal == TRUE) {
             self.operationActive = FALSE;
+            self.canAddDecimal = FALSE;
             [self updateDisplay:@"."];
     }
 }
 
 // Called when a digit is pressed, adds it to the expression
 - (IBAction)pressedNumber:(UIButton *)sender {
+    self.canAddDecimal = TRUE;
     NSString *number = [sender currentTitle];
     self.operationActive = FALSE;
     [self updateDisplay:number];
