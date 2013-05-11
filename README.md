@@ -8,7 +8,7 @@ Features
 
 - expression respects order of operations
 	- this is done by converting the infix expression into postfix notation and then evalutating the
-  		  postfix expression using a sudo stack (aka a NSMutableArray).
+  		  postfix expression using a sudo stack (aka a `NSMutableArray`).
 - two operators cannot be entered one after another, they must be seperated by an operand
 - an operator cannot be entered as the first value in an expression
 - trying to divide by zero will give you a result of "undefined"
@@ -24,4 +24,4 @@ Extra Features (in terms of assignment outline)
 
 Preview
 -------
-![preview](https://raw.github.com/borist/iPhone-Calculator/master/preview.png "Calculator Screenshot")
+![preview](./preview.png?raw=true "Calculator Screenshot")
