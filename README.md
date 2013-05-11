@@ -24,4 +24,4 @@ Extra Features (in terms of assignment outline)
 
 Preview
 -------
-![preview](https://github.com/borist/iPhone-Calculator/blob/master/preview.png "Calculator Screenshot")
+![preview](https://raw.github.com/borist/iPhone-Calculator/master/preview.png "Calculator Screenshot")
