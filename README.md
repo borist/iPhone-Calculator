@@ -21,3 +21,7 @@ Extra Features (in terms of assignment outline)
 - (10 pts) Show the entire operation string instead of just the previous number. Make sure this is displayed properly even when the operation string is very long. Think about how you would do that gracefully.
 - (5 pts) Support backspace. 
 - (? pts) Added homescreen icon for calculator 
+
+Preview
+-------
+![preview](https://github.com/borist/iPhone-Calculator/blob/master/preview.png "Calculator Screenshot")
